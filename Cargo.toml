@@ -13,4 +13,12 @@ path = "src/Day1/task1.rs"
 name = "day1-task2"
 path = "src/Day1/task2.rs"
 
+[[bin]]
+name = "day2-task1"
+path = "src/Day2/task1.rs"
+
+[[bin]]
+name = "day2-task2"
+path = "src/Day2/task2.rs"
+
 [dependencies]
