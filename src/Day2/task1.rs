@@ -37,7 +37,7 @@ fn main() {
             "X" => Play::Rock,
             "Y" => Play::Paper,
             "Z" => Play::Scissors,
-            _ => panic!("Cannot find matching move!")
+            _ => panic!("Cannot find matching move!"),
         }
     }
 

@@ -54,7 +54,7 @@ fn main() {
             "A" => Play::Rock,
             "B" => Play::Paper,
             "C" => Play::Scissors,
-            _ => panic!("Cannot find matching move!")
+            _ => panic!("Cannot find matching move!"),
         }
     }
 
@@ -63,7 +63,7 @@ fn main() {
             "X" => Result::Loss,
             "Y" => Result::Draw,
             "Z" => Result::Win,
-            _ => panic!("Cannot find matching result!")
+            _ => panic!("Cannot find matching result!"),
         }
     }
 
