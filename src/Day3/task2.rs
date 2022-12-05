@@ -25,10 +25,10 @@ fn main() {
         match i {
             0 => {
                 first = line.ok();
-            },
+            }
             1 => {
                 second = line.ok();
-            },
+            }
             2 => {
                 let a = first.clone().unwrap();
                 let a_set = str_to_char_set(a);
@@ -42,8 +42,8 @@ fn main() {
 
                 let el = interr.next();
                 sum += value_of(el.unwrap());
-            },
-            _ => unreachable!("")
+            }
+            _ => unreachable!(""),
         }
 
         i = (i + 1) % 3;
