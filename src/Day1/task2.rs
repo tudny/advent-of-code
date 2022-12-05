@@ -23,8 +23,8 @@ fn main() {
     values.reverse();
 
     let mut current_sum = 0;
-    for i in 0..3 {
-        current_sum += values[i];
+    for item in values.iter().take(3) {
+        current_sum += item;
     }
 
     println!("{}", current_sum);

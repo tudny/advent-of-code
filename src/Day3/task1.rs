@@ -4,7 +4,7 @@ use std::collections::HashSet;
 use std::io::BufRead;
 
 fn str_to_char_set(a: &str) -> HashSet<char> {
-    HashSet::<char>::from_iter(a.chars().into_iter())
+    HashSet::<char>::from_iter(a.chars())
 }
 
 fn value_of(x: &char) -> usize {

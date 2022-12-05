@@ -4,7 +4,7 @@ use std::collections::HashSet;
 use std::io::BufRead;
 
 fn str_to_char_set(a: String) -> HashSet<char> {
-    HashSet::<char>::from_iter(a.chars().into_iter())
+    HashSet::<char>::from_iter(a.chars())
 }
 
 fn value_of(x: &char) -> usize {
@@ -37,7 +37,7 @@ fn main() {
                 let c_set = str_to_char_set(line.ok().unwrap());
 
                 let inter = a_set.intersection(&b_set);
-                let inter: HashSet<_> = inter.into_iter().map(|x| x.clone()).collect();
+                let inter: HashSet<_> = inter.into_iter().copied().collect();
                 let mut interr = c_set.intersection(&inter);
 
                 let el = interr.next();

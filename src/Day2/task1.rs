@@ -44,7 +44,7 @@ fn main() {
     let mut score = 0;
     for line in std::io::stdin().lock().lines() {
         let line = line.unwrap();
-        let (a, b) = line.split_once(" ").expect("Invalid input");
+        let (a, b) = line.split_once(' ').expect("Invalid input");
         let a = map_letter_to_play(a);
         let b = map_letter_to_play(b);
 
