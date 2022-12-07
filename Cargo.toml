@@ -45,6 +45,14 @@ path = "src/Day5/task1.rs"
 name = "day5-task2"
 path = "src/Day5/task2.rs"
 
+[[bin]]
+name = "day6-task1"
+path = "src/Day6/task1.rs"
+
+[[bin]]
+name = "day6-task2"
+path = "src/Day6/task2.rs"
+
 [dependencies]
 regex = "1.5.4"
 itertools = "0.10.5"
