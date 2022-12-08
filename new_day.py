@@ -10,10 +10,10 @@ import sys
 def main(day_number):
     path = f'src/Day{day_number}'
     os.mkdir(path)
-    os.system(f'touch {path}/input.in')
+    open(f'{path}/input.txt', 'w').close()
+    open(f'{path}/task1.rs', 'w').close()
+    open(f'{path}/task2.rs', 'w').close()
     os.system(f'echo "# Day{day_number}" >> {path}/README.md')
-    os.system(f'touch {path}/task1.rs')
-    os.system(f'touch {path}/task2.rs')
 
     def new_task(nr):
         return f"""
