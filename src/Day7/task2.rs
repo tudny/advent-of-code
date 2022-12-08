@@ -1,4 +1,4 @@
-use std::collections::{HashMap};
+use std::collections::HashMap;
 use std::io::BufRead;
 
 enum Node {
@@ -66,7 +66,7 @@ fn main() {
                 // file
                 let (size, name) = line.split_once(' ').unwrap();
                 let size = size.parse::<usize>().unwrap();
-                let name = stack.last().unwrap().clone() + "/" + &name[..].to_string();
+                let name = stack.last().unwrap().clone() + "/" + name;
                 if let Node::Dir(children) = nodes.get_mut(stack.last().unwrap()).unwrap() {
                     children.push(name.to_string());
                     nodes.insert(name.to_string(), Node::File(size));
